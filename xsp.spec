@@ -26,9 +26,6 @@ make
 %install
 rm -fr %{buildroot}
 %makeinstall_std pkgconfigdir=%_datadir/pkgconfig
-%if %_lib != lib
-mv %buildroot%_libdir/xsp/* %buildroot%_prefix/lib/xsp
-%endif
 
 # strip away annoying ^M
 find %{buildroot} -type f|xargs file|grep 'CRLF'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
