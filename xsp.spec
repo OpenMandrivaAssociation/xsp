@@ -8,6 +8,7 @@ URL:		http://www.mono-project.com/
 Source:	 http://go-mono.com/sources/xsp/xsp-%{version}.tar.bz2
 BuildRequires:	mono-devel
 BuildArch: noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Conflicts: apache-mod_mono < 1:1.2.5-2
 
 %description
