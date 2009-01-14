@@ -1,6 +1,6 @@
 Summary:	Small Web Server Hosting ASP.NET
 Name:		xsp
-Version:	2.0
+Version:	2.2
 Release:	%mkrel 1
 License:	BSD
 Group:		System/Servers
@@ -45,7 +45,6 @@ find %{buildroot} -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e
 %_prefix/lib/xsp/1.0
 %_prefix/lib/xsp/2.0
 %_prefix/lib/xsp/test
-%_prefix/lib/xsp/unittests
 %_prefix/lib/mono/1.0/*
 %_prefix/lib/mono/2.0/*
 %_prefix/lib/mono/gac/*
