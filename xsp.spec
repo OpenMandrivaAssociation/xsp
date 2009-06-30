@@ -1,6 +1,6 @@
 Summary:	Small Web Server Hosting ASP.NET
 Name:		xsp
-Version:	2.4
+Version:	2.4.2
 Release:	%mkrel 1
 License:	BSD
 Group:		System/Servers
