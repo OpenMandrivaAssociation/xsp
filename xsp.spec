@@ -1,6 +1,6 @@
 Summary:	Small Web Server Hosting ASP.NET
 Name:		xsp
-Version:	2.8
+Version:	2.8.1
 Release:	%mkrel 1
 License:	BSD
 Group:		System/Servers
@@ -15,6 +15,17 @@ Conflicts: apache-mod_mono < 1:1.2.5-2
 The XSP server is a small Web server that hosts the Mono System.Web
 classes for running what is commonly known as ASP.NET.
 
+%package devel
+Group:		Development/Other
+Summary:	Development files for %name
+Requires:	%name = %version-%release
+
+%description devel
+The XSP server is a small Web server that hosts the Mono System.Web
+classes for running what is commonly known as ASP.NET.
+
+This package contains the development parts of %{name}.
+
 %package doc
 Summary:	Development documentation for %name
 Group:		Development/Other
@@ -23,7 +34,7 @@ Requires(postun):	mono-tools >= 1.1.9
 
 %description doc
 This package contains the API documentation for %name in
-Monodoc format.
+  Monodoc format.
 
 %prep
 
@@ -41,6 +52,8 @@ install -D src/Mono.WebServer.XSP/xsp.pc %buildroot%_datadir/pkgconfig/xsp.pc
 # strip away annoying ^M
 find %{buildroot} -type f|xargs file|grep 'CRLF'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 find %{buildroot} -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
+#gw remove unit tests
+rm -rf %buildroot%_prefix/lib/xsp/unittests
    
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
@@ -57,14 +70,19 @@ fi
 %doc AUTHORS INSTALL NEWS README COPYING
 %attr(0755,root,root) %{_bindir}/*
 %attr(0644,root,root) %{_mandir}/man1/*
-%_datadir/pkgconfig/xsp.pc
-%_datadir/pkgconfig/xsp-2.pc
 %dir %_prefix/lib/xsp
 %_prefix/lib/xsp/2.0
+%_prefix/lib/xsp/4.0
 %_prefix/lib/xsp/test
-%_prefix/lib/xsp/unittests
 %_prefix/lib/mono/2.0/*
+%_prefix/lib/mono/4.0/*
 %_prefix/lib/mono/gac/*
+
+%files devel
+%defattr(-,root,root)
+%_datadir/pkgconfig/xsp.pc
+%_datadir/pkgconfig/xsp-2.pc
+%_datadir/pkgconfig/xsp-4.pc
 
 %files doc
 %defattr(-,root,root)
