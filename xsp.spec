@@ -87,3 +87,114 @@ fi
 %files doc
 %defattr(-,root,root)
 %_prefix/lib/monodoc/sources/*
+
+
+%changelog
+* Thu Jun 16 2011 Götz Waschk <waschk@mandriva.org> 2.10.2-1mdv2011.0
++ Revision: 685497
+- new version
+
+* Thu Feb 17 2011 Götz Waschk <waschk@mandriva.org> 2.10-1
++ Revision: 638113
+- update to new version 2.10
+
+* Thu Jan 06 2011 Götz Waschk <waschk@mandriva.org> 2.8.2-1mdv2011.0
++ Revision: 629042
+- update to new version 2.8.2
+
+* Thu Dec 23 2010 Götz Waschk <waschk@mandriva.org> 2.8.1-1mdv2011.0
++ Revision: 624030
+- new version
+- update file list
+- split out devel package
+- remove unit tests
+
+* Thu Oct 07 2010 Götz Waschk <waschk@mandriva.org> 2.8-1mdv2011.0
++ Revision: 583937
+- new version
+- update file list
+- manually install pkgconfig file
+- add doc package
+
+* Tue Jul 20 2010 Götz Waschk <waschk@mandriva.org> 2.6.5-1mdv2011.0
++ Revision: 555672
+- update to new version 2.6.5
+
+* Wed Apr 28 2010 Götz Waschk <waschk@mandriva.org> 2.6.4-1mdv2010.1
++ Revision: 539981
+- update to new version 2.6.4
+
+* Tue Mar 16 2010 Götz Waschk <waschk@mandriva.org> 2.6.3-1mdv2010.1
++ Revision: 521497
+- update to new version 2.6.3
+
+* Tue Dec 15 2009 Götz Waschk <waschk@mandriva.org> 2.6-1mdv2010.1
++ Revision: 478864
+- update to new version 2.6
+
+* Thu Dec 10 2009 Götz Waschk <waschk@mandriva.org> 2.4.3-1mdv2010.1
++ Revision: 475950
+- update to new version 2.4.3
+
+* Tue Jun 30 2009 Götz Waschk <waschk@mandriva.org> 2.4.2-1mdv2010.0
++ Revision: 390910
+- update to new version 2.4.2
+
+* Fri Apr 24 2009 Götz Waschk <waschk@mandriva.org> 2.4-1mdv2010.0
++ Revision: 368972
+- new version
+- update file list
+
+* Wed Jan 14 2009 Götz Waschk <waschk@mandriva.org> 2.2-1mdv2009.1
++ Revision: 329392
+- new version
+- update file list
+
+* Sat Oct 11 2008 Götz Waschk <waschk@mandriva.org> 2.0-1mdv2009.1
++ Revision: 291912
+- new version
+
+* Sat Aug 09 2008 Thierry Vignaud <tv@mandriva.org> 1.9.1-2mdv2009.0
++ Revision: 269844
+- rebuild early 2009.0 package (before pixel changes)
+
+* Tue Apr 22 2008 Götz Waschk <waschk@mandriva.org> 1.9.1-1mdv2009.0
++ Revision: 196541
+- new version
+
+* Tue Apr 08 2008 Götz Waschk <waschk@mandriva.org> 1.9-1mdv2009.0
++ Revision: 192398
+- new version
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Dec 13 2007 Götz Waschk <waschk@mandriva.org> 1.2.6-1mdv2008.1
++ Revision: 119272
+- new version
+- update file list
+
+* Wed Sep 05 2007 Götz Waschk <waschk@mandriva.org> 1.2.5-1mdv2008.0
++ Revision: 80101
+- remove build workaround
+- stand alone package of xsp
+- copy apache-mod_mono to xsp
+
+* Thu Aug 30 2007 Götz Waschk <waschk@mandriva.org> 1:1.2.5-1mdv2008.0
++ Revision: 75587
+- new version
+
+* Fri Aug 17 2007 Oden Eriksson <oeriksson@mandriva.com> 1:1.2.4-3mdv2008.0
++ Revision: 64723
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Wed May 16 2007 Götz Waschk <waschk@mandriva.org> 1:1.2.4-1mdv2008.0
++ Revision: 27355
+- new version
+
