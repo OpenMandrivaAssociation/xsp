@@ -1,7 +1,7 @@
 Summary:	Small Web Server Hosting ASP.NET
 Name:		xsp
 Version:	2.10.2
-Release:	%mkrel 1
+Release:	2
 License:	BSD
 Group:		System/Servers
 URL:		http://www.mono-project.com/
