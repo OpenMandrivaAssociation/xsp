@@ -4,7 +4,7 @@ Version:	2.10.2
 Release:	2
 License:	BSD
 Group:		System/Servers
-URL:		http://www.mono-project.com/
+URL:		https://www.mono-project.com/
 Source:	 http://go-mono.com/sources/xsp/xsp-%{version}.tar.bz2
 BuildRequires:	mono-devel
 BuildArch: noarch
