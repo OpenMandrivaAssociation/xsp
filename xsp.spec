@@ -6,6 +6,11 @@ License:	BSD
 Group:		System/Servers
 URL:		https://www.mono-project.com/
 Source:	 http://go-mono.com/sources/xsp/xsp-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mono-devel
 BuildArch: noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
